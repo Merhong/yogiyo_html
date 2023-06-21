@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color:  #fa0050;
+    /* border-color: white;
+    border-style: solid; */
+}
+
+.center-cover-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.nav-menu1 {
+    background: url('./image/logo-yogiyo.png');
+    background-size: 90px;
+    width: 90px;
+    height: 40px;
+    /* font-size: 30px;
+    font-weight: 900; */
+    color: white;
+}
+
+.nav-menu2 {
+    width: 150px;
+    text-align: center;
+    font-size: 18px;
+    padding: 7px 0;
+    color: white;
+    border-color: #ea7266;
+    border-style: solid;
+    border-width: thin;
+}
+
+.search-img {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    background-image: url('./image/bg-top.png');
+    padding: 50px;
+}
+
+.search-deco {
+    display: flex;
+    margin-top: 60px;
+    height: 40px;
+}
+
+/* 검색창 로고 */
+.search-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background-image: url('./image/search-logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 6px;
+    border: none;
+}
+
+/* 검색창 Input */
+.search-input { 
+    width: 300px;
+    color: #555;
+    font-size: 14px;
+    padding: 6px 12px;
+}
+
+/* 검색 버튼 */
+.search-button {
+    width: 60px;
+    height: 40px;
+    padding: 5px 10px;
+    background-color: #ff8a00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* 카테고리 박스 - 그리드 */
+.category-box{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    margin: 10px;
+    /* border-width: 5px;
+    border-style: solid;
+    border-color: darkslateblue; */
+}
+
+/* 화면이 700보다 작으면 3열로 출력 */
+@media(max-width:700px) {
+    .category-box {
+        grid-template-columns: repeat(3, auto);
+    }
+}
+
+/* 화면 너비가 500px보다 작으면 그리드를 2열로 출력 */
+@media(max-width:500px) {
+    .category-box {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+
+/* 카테고리에 들어갈 이미지 */
+.category-img{
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #d9d9d9;
+    background-position: right bottom;
+}
+
+.category-deco {
+    margin: 0 5px 5px 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+g
+.category-00 {
+    background-image: url('./image/category-00.png');
+    background-position: left top;
+}
+
+.category-01 {
+    /* 전체보기 */
+    background-image: url('./image/category-전체.png');
+}
+
+.category-02 {
+    /* 1인분 주문 */
+    background-image: url('./image/category-1인분.png');
+}
+
+.category-03 {
+    /* 프랜차이즈 */
+    background-image: url('./image/category-프랜차이즈.png');
+}
+
+.category-04 {
+    /* 치킨 */
+    background-image: url('./image/category-치킨.png');
+}
+
+.category-05 {
+    /* 피자/양식 */
+    background-image: url('./image/category-피자.png');
+}
+.category-06 {
+    /* 중국집 */
+    background-image: url('./image/category-중국집.png');
+}
+.category-07 {
+    /* 한식 */
+    background-image: url('./image/category-한식.png');
+}
+.category-08 {
+    /* 일식/돈까스 */
+    background-image: url('./image/category-일식.png');
+}
+.category-09 {
+    /* 족발/보쌈 */
+    background-image: url('./image/category-족발.png');
+}
+.category-10 {
+    /* 야식 */
+    background-image: url('./image/category-야식.png');
+}
+.category-11 {
+    /* 분식 */
+    background-image: url('./image/category-분식.png');
+}
+.category-12 {
+    /* 카페/디저트 */
+    background-image: url('./image/category-디저트.png');
+}
+.category-13 {
+    /* 편의점/마트 */
+    background-image: url('./image/category-편의점.png');
+}
